@@ -1,0 +1,32 @@
+[project]
+name = "genai-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain-openai>=0.3.19",
+    "langchain>=0.3.25",
+    "langgraph-supervisor>=0.0.27",
+    "rich>=14.0.0",
+    "langchain-community>=0.3.24",
+    "cohere>=5.15.0",
+    "lancedb>=0.22.1",
+    "pypdf>=5.6.0",
+    "pyodbc>=5.2.0",
+    "pdfminer-six>=20250506",
+    "transformers>=4.52.4",
+    "datasets>=3.6.0",
+    "scikit-learn>=1.7.0",
+    "torch>=2.7.1",
+    "torchvision>=0.22.1",
+    "accelerate>=0.26.0",
+    "torchaudio>=2.7.1",
+    "jupyterlab>=4.4.3",
+    "streamlit>=1.28.0",
+    "plotly>=5.15.0",
+    "matplotlib>=3.10.3",
+    "huggingface-hub>=0.32.4",
+    "diagrams>=0.24.4",
+    "graphviz>=0.20.3",
+]

@@ -1,0 +1,10 @@
+[2025-06-11 14:09:19,056] [INFO] [conversation_evaluator] ✅ Loaded 15 conversations from ../sms_conversations.json
+[2025-06-11 14:09:21,645] [INFO] [conversation_evaluator] ✅ Successfully imported app components
+[2025-06-11 14:09:21,645] [INFO] [conversation_evaluator] 🚀 Starting evaluation of 2 conversations
+[2025-06-11 14:09:21,645] [INFO] [conversation_evaluator] 📊 Processing conversation 1/2
+[2025-06-11 14:09:21,645] [INFO] [conversation_evaluator] 🎯 Evaluating conversation 1
+[2025-06-11 14:09:21,689] [ERROR] [conversation_evaluator] ❌ Critical error evaluating conversation 1: Failed to load PDF: Error: PDF file not found at app/PythonDeveloperJobDescription.pdf
+[2025-06-11 14:09:21,689] [INFO] [conversation_evaluator] 📊 Processing conversation 2/2
+[2025-06-11 14:09:21,689] [INFO] [conversation_evaluator] 🎯 Evaluating conversation 2
+[2025-06-11 14:09:21,715] [ERROR] [conversation_evaluator] ❌ Critical error evaluating conversation 2: Failed to load PDF: Error: PDF file not found at app/PythonDeveloperJobDescription.pdf
+[2025-06-11 14:09:21,715] [INFO] [conversation_evaluator] 📄 Report saved to test_report.md
