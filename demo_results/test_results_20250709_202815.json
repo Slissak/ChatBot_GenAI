@@ -1,0 +1,138 @@
+{
+  "execution_info": {
+    "start_time": "2025-07-09T20:28:15.930303",
+    "end_time": "2025-07-09T20:28:15.931685",
+    "total_tests_planned": 6,
+    "configuration": {
+      "max_parallel_tests": 3,
+      "test_timeout_seconds": 60,
+      "validate_flows": true
+    }
+  },
+  "statistics": {
+    "total_tests": 6,
+    "successful_tests": 0,
+    "failed_tests": 6,
+    "success_rate": 0.0,
+    "average_duration_seconds": 0.00047450000000000004,
+    "average_validation_score": 0.0,
+    "total_execution_time": 0.001389,
+    "tests_per_minute": 259179.2656587473
+  },
+  "test_results": [
+    {
+      "test_id": "info_query_interested_eager_accf7c5c",
+      "scenario_id": "info_query_interested",
+      "persona_name": "eager",
+      "status": "failed",
+      "start_time": "2025-07-09T20:28:15.930370",
+      "end_time": "2025-07-09T20:28:15.930916",
+      "duration_seconds": 0.000546,
+      "conversation_id": null,
+      "validation_score": 0.0,
+      "errors": [
+        "Conversation simulation failed: ConversationRecord.__init__() got an unexpected keyword argument 'conversation_id'"
+      ],
+      "warnings": [],
+      "metrics": {},
+      "retry_count": 0,
+      "logs_captured": false,
+      "flow_validation": null
+    },
+    {
+      "test_id": "direct_scheduling_direct_b0b34a4b",
+      "scenario_id": "direct_scheduling",
+      "persona_name": "direct",
+      "status": "failed",
+      "start_time": "2025-07-09T20:28:15.930417",
+      "end_time": "2025-07-09T20:28:15.930931",
+      "duration_seconds": 0.000514,
+      "conversation_id": null,
+      "validation_score": 0.0,
+      "errors": [
+        "Conversation simulation failed: ConversationRecord.__init__() got an unexpected keyword argument 'conversation_id'"
+      ],
+      "warnings": [],
+      "metrics": {},
+      "retry_count": 0,
+      "logs_captured": false,
+      "flow_validation": null
+    },
+    {
+      "test_id": "info_query_not_interested_skeptical_2cd6b2c1",
+      "scenario_id": "info_query_not_interested",
+      "persona_name": "skeptical",
+      "status": "failed",
+      "start_time": "2025-07-09T20:28:15.930644",
+      "end_time": "2025-07-09T20:28:15.931195",
+      "duration_seconds": 0.000551,
+      "conversation_id": null,
+      "validation_score": 0.0,
+      "errors": [
+        "Conversation simulation failed: ConversationRecord.__init__() got an unexpected keyword argument 'conversation_id'"
+      ],
+      "warnings": [],
+      "metrics": {},
+      "retry_count": 0,
+      "logs_captured": false,
+      "flow_validation": null
+    },
+    {
+      "test_id": "indecisive_journey_indecisive_d4de1426",
+      "scenario_id": "indecisive_journey",
+      "persona_name": "indecisive",
+      "status": "failed",
+      "start_time": "2025-07-09T20:28:15.930959",
+      "end_time": "2025-07-09T20:28:15.931459",
+      "duration_seconds": 0.0005,
+      "conversation_id": null,
+      "validation_score": 0.0,
+      "errors": [
+        "Conversation simulation failed: ConversationRecord.__init__() got an unexpected keyword argument 'conversation_id'"
+      ],
+      "warnings": [],
+      "metrics": {},
+      "retry_count": 0,
+      "logs_captured": false,
+      "flow_validation": null
+    },
+    {
+      "test_id": "detailed_exploration_detail_oriented_b514aafc",
+      "scenario_id": "detailed_exploration",
+      "persona_name": "detail_oriented",
+      "status": "failed",
+      "start_time": "2025-07-09T20:28:15.931061",
+      "end_time": "2025-07-09T20:28:15.931467",
+      "duration_seconds": 0.000406,
+      "conversation_id": null,
+      "validation_score": 0.0,
+      "errors": [
+        "Conversation simulation failed: ConversationRecord.__init__() got an unexpected keyword argument 'conversation_id'"
+      ],
+      "warnings": [],
+      "metrics": {},
+      "retry_count": 0,
+      "logs_captured": false,
+      "flow_validation": null
+    },
+    {
+      "test_id": "immediate_rejection_disinterested_db3ad936",
+      "scenario_id": "immediate_rejection",
+      "persona_name": "disinterested",
+      "status": "failed",
+      "start_time": "2025-07-09T20:28:15.931227",
+      "end_time": "2025-07-09T20:28:15.931557",
+      "duration_seconds": 0.00033,
+      "conversation_id": null,
+      "validation_score": 0.0,
+      "errors": [
+        "Conversation simulation failed: ConversationRecord.__init__() got an unexpected keyword argument 'conversation_id'"
+      ],
+      "warnings": [],
+      "metrics": {},
+      "retry_count": 0,
+      "logs_captured": false,
+      "flow_validation": null
+    }
+  ]
+}

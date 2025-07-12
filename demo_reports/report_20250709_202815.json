@@ -1,0 +1,425 @@
+{
+  "report_id": "report_20250709_202815",
+  "generation_time": "2025-07-09T20:28:15.934601",
+  "execution_summary": {
+    "total_tests": 8,
+    "successful_tests": 0,
+    "failed_tests": 8,
+    "timeout_tests": 0,
+    "success_rate": 0.0,
+    "failure_rate": 1.0,
+    "timeout_rate": 0.0,
+    "average_duration_seconds": 0.000837375,
+    "median_duration_seconds": 0.000767,
+    "min_duration_seconds": 0.000419,
+    "max_duration_seconds": 0.001343,
+    "duration_std_dev": 0.0004044375062090204
+  },
+  "scenario_analysis": [
+    {
+      "scenario_id": "info_query_interested",
+      "total_tests": 1,
+      "successful_tests": 0,
+      "failed_tests": 1,
+      "success_rate": 0.0,
+      "average_duration": 0.001343,
+      "average_validation_score": 0,
+      "common_issues": [
+        "Conversation simulation failed: ConversationRecord.__init__() got an unexpected keyword argument 'conversation_id'"
+      ],
+      "persona_performance": {
+        "eager": 0.0
+      }
+    },
+    {
+      "scenario_id": "info_query_not_interested",
+      "total_tests": 1,
+      "successful_tests": 0,
+      "failed_tests": 1,
+      "success_rate": 0.0,
+      "average_duration": 0.00131,
+      "average_validation_score": 0,
+      "common_issues": [
+        "Conversation simulation failed: ConversationRecord.__init__() got an unexpected keyword argument 'conversation_id'"
+      ],
+      "persona_performance": {
+        "skeptical": 0.0
+      }
+    },
+    {
+      "scenario_id": "detailed_exploration",
+      "total_tests": 1,
+      "successful_tests": 0,
+      "failed_tests": 1,
+      "success_rate": 0.0,
+      "average_duration": 0.001224,
+      "average_validation_score": 0,
+      "common_issues": [
+        "Conversation simulation failed: ConversationRecord.__init__() got an unexpected keyword argument 'conversation_id'"
+      ],
+      "persona_performance": {
+        "detail_oriented": 0.0
+      }
+    },
+    {
+      "scenario_id": "direct_scheduling",
+      "total_tests": 1,
+      "successful_tests": 0,
+      "failed_tests": 1,
+      "success_rate": 0.0,
+      "average_duration": 0.000824,
+      "average_validation_score": 0,
+      "common_issues": [
+        "Conversation simulation failed: ConversationRecord.__init__() got an unexpected keyword argument 'conversation_id'"
+      ],
+      "persona_performance": {
+        "direct": 0.0
+      }
+    },
+    {
+      "scenario_id": "indecisive_journey",
+      "total_tests": 1,
+      "successful_tests": 0,
+      "failed_tests": 1,
+      "success_rate": 0.0,
+      "average_duration": 0.00071,
+      "average_validation_score": 0,
+      "common_issues": [
+        "Conversation simulation failed: ConversationRecord.__init__() got an unexpected keyword argument 'conversation_id'"
+      ],
+      "persona_performance": {
+        "indecisive": 0.0
+      }
+    },
+    {
+      "scenario_id": "immediate_rejection",
+      "total_tests": 1,
+      "successful_tests": 0,
+      "failed_tests": 1,
+      "success_rate": 0.0,
+      "average_duration": 0.000449,
+      "average_validation_score": 0,
+      "common_issues": [
+        "Conversation simulation failed: ConversationRecord.__init__() got an unexpected keyword argument 'conversation_id'"
+      ],
+      "persona_performance": {
+        "disinterested": 0.0
+      }
+    },
+    {
+      "scenario_id": "full_journey_success",
+      "total_tests": 1,
+      "successful_tests": 0,
+      "failed_tests": 1,
+      "success_rate": 0.0,
+      "average_duration": 0.000419,
+      "average_validation_score": 0,
+      "common_issues": [
+        "Conversation simulation failed: ConversationRecord.__init__() got an unexpected keyword argument 'conversation_id'"
+      ],
+      "persona_performance": {
+        "eager": 0.0
+      }
+    },
+    {
+      "scenario_id": "skeptical_evaluation",
+      "total_tests": 1,
+      "successful_tests": 0,
+      "failed_tests": 1,
+      "success_rate": 0.0,
+      "average_duration": 0.00042,
+      "average_validation_score": 0,
+      "common_issues": [
+        "Conversation simulation failed: ConversationRecord.__init__() got an unexpected keyword argument 'conversation_id'"
+      ],
+      "persona_performance": {
+        "skeptical": 0.0
+      }
+    }
+  ],
+  "persona_analysis": [
+    {
+      "persona_name": "eager",
+      "total_tests": 2,
+      "successful_tests": 0,
+      "failed_tests": 2,
+      "success_rate": 0.0,
+      "average_duration": 0.0008810000000000001,
+      "average_validation_score": 0,
+      "scenario_performance": {
+        "info_query_interested": 0.0,
+        "full_journey_success": 0.0
+      },
+      "common_issues": [
+        "Conversation simulation failed: ConversationRecord.__init__() got an unexpected keyword argument 'conversation_id'"
+      ]
+    },
+    {
+      "persona_name": "skeptical",
+      "total_tests": 2,
+      "successful_tests": 0,
+      "failed_tests": 2,
+      "success_rate": 0.0,
+      "average_duration": 0.000865,
+      "average_validation_score": 0,
+      "scenario_performance": {
+        "info_query_not_interested": 0.0,
+        "skeptical_evaluation": 0.0
+      },
+      "common_issues": [
+        "Conversation simulation failed: ConversationRecord.__init__() got an unexpected keyword argument 'conversation_id'"
+      ]
+    },
+    {
+      "persona_name": "detail_oriented",
+      "total_tests": 1,
+      "successful_tests": 0,
+      "failed_tests": 1,
+      "success_rate": 0.0,
+      "average_duration": 0.001224,
+      "average_validation_score": 0,
+      "scenario_performance": {
+        "detailed_exploration": 0.0
+      },
+      "common_issues": [
+        "Conversation simulation failed: ConversationRecord.__init__() got an unexpected keyword argument 'conversation_id'"
+      ]
+    },
+    {
+      "persona_name": "direct",
+      "total_tests": 1,
+      "successful_tests": 0,
+      "failed_tests": 1,
+      "success_rate": 0.0,
+      "average_duration": 0.000824,
+      "average_validation_score": 0,
+      "scenario_performance": {
+        "direct_scheduling": 0.0
+      },
+      "common_issues": [
+        "Conversation simulation failed: ConversationRecord.__init__() got an unexpected keyword argument 'conversation_id'"
+      ]
+    },
+    {
+      "persona_name": "indecisive",
+      "total_tests": 1,
+      "successful_tests": 0,
+      "failed_tests": 1,
+      "success_rate": 0.0,
+      "average_duration": 0.00071,
+      "average_validation_score": 0,
+      "scenario_performance": {
+        "indecisive_journey": 0.0
+      },
+      "common_issues": [
+        "Conversation simulation failed: ConversationRecord.__init__() got an unexpected keyword argument 'conversation_id'"
+      ]
+    },
+    {
+      "persona_name": "disinterested",
+      "total_tests": 1,
+      "successful_tests": 0,
+      "failed_tests": 1,
+      "success_rate": 0.0,
+      "average_duration": 0.000449,
+      "average_validation_score": 0,
+      "scenario_performance": {
+        "immediate_rejection": 0.0
+      },
+      "common_issues": [
+        "Conversation simulation failed: ConversationRecord.__init__() got an unexpected keyword argument 'conversation_id'"
+      ]
+    }
+  ],
+  "statistical_insights": {
+    "duration_patterns": {
+      "very_fast": 8,
+      "fast": 0,
+      "normal": 0,
+      "slow": 0
+    },
+    "top_errors": [
+      {
+        "error": "Conversation simulation failed: ConversationRecord.__init__() got an unexpected keyword argument 'conversation_id'",
+        "count": 8,
+        "percentage": 100.0
+      }
+    ],
+    "performance_combinations": {
+      "best_combinations": [],
+      "worst_combinations": []
+    }
+  },
+  "recommendations": [
+    "\ud83d\udea8 Low overall success rate (0.0%). Consider reviewing test scenarios and system implementation.",
+    "\ud83d\udd34 Scenario 'info_query_interested' has low success rate (0.0%). Review scenario logic and expectations.",
+    "\ud83d\udd34 Scenario 'info_query_not_interested' has low success rate (0.0%). Review scenario logic and expectations.",
+    "\ud83d\udd34 Scenario 'detailed_exploration' has low success rate (0.0%). Review scenario logic and expectations.",
+    "\ud83d\udd34 Scenario 'direct_scheduling' has low success rate (0.0%). Review scenario logic and expectations.",
+    "\ud83d\udd34 Scenario 'indecisive_journey' has low success rate (0.0%). Review scenario logic and expectations.",
+    "\ud83d\udd34 Scenario 'immediate_rejection' has low success rate (0.0%). Review scenario logic and expectations.",
+    "\ud83d\udd34 Scenario 'full_journey_success' has low success rate (0.0%). Review scenario logic and expectations.",
+    "\ud83d\udd34 Scenario 'skeptical_evaluation' has low success rate (0.0%). Review scenario logic and expectations.",
+    "\ud83d\udd34 Persona 'eager' has low success rate (0.0%). Review persona behavior patterns.",
+    "\ud83d\udd34 Persona 'skeptical' has low success rate (0.0%). Review persona behavior patterns.",
+    "\ud83d\udd34 Persona 'detail_oriented' has low success rate (0.0%). Review persona behavior patterns.",
+    "\ud83d\udd34 Persona 'direct' has low success rate (0.0%). Review persona behavior patterns.",
+    "\ud83d\udd34 Persona 'indecisive' has low success rate (0.0%). Review persona behavior patterns.",
+    "\ud83d\udd34 Persona 'disinterested' has low success rate (0.0%). Review persona behavior patterns.",
+    "\ud83d\udc1b Common error affecting 100.0% of tests: 'Conversation simulation failed: ConversationRecord.__init__() got an unexpected keyword argument 'conversation_id''. Prioritize fixing this issue."
+  ],
+  "raw_data": [
+    {
+      "test_id": "info_query_interested_eager_5a97ab33",
+      "scenario_id": "info_query_interested",
+      "persona_name": "eager",
+      "status": "failed",
+      "start_time": "2025-07-09T20:28:15.932376",
+      "end_time": "2025-07-09T20:28:15.933719",
+      "duration_seconds": 0.001343,
+      "conversation_id": null,
+      "validation_score": 0.0,
+      "errors": [
+        "Conversation simulation failed: ConversationRecord.__init__() got an unexpected keyword argument 'conversation_id'"
+      ],
+      "warnings": [],
+      "metrics": {},
+      "retry_count": 0,
+      "logs_captured": false,
+      "flow_validation": null
+    },
+    {
+      "test_id": "info_query_not_interested_skeptical_fbc54178",
+      "scenario_id": "info_query_not_interested",
+      "persona_name": "skeptical",
+      "status": "failed",
+      "start_time": "2025-07-09T20:28:15.932422",
+      "end_time": "2025-07-09T20:28:15.933732",
+      "duration_seconds": 0.00131,
+      "conversation_id": null,
+      "validation_score": 0.0,
+      "errors": [
+        "Conversation simulation failed: ConversationRecord.__init__() got an unexpected keyword argument 'conversation_id'"
+      ],
+      "warnings": [],
+      "metrics": {},
+      "retry_count": 0,
+      "logs_captured": false,
+      "flow_validation": null
+    },
+    {
+      "test_id": "detailed_exploration_detail_oriented_624cb38f",
+      "scenario_id": "detailed_exploration",
+      "persona_name": "detail_oriented",
+      "status": "failed",
+      "start_time": "2025-07-09T20:28:15.932516",
+      "end_time": "2025-07-09T20:28:15.933740",
+      "duration_seconds": 0.001224,
+      "conversation_id": null,
+      "validation_score": 0.0,
+      "errors": [
+        "Conversation simulation failed: ConversationRecord.__init__() got an unexpected keyword argument 'conversation_id'"
+      ],
+      "warnings": [],
+      "metrics": {},
+      "retry_count": 0,
+      "logs_captured": false,
+      "flow_validation": null
+    },
+    {
+      "test_id": "direct_scheduling_direct_b2c72381",
+      "scenario_id": "direct_scheduling",
+      "persona_name": "direct",
+      "status": "failed",
+      "start_time": "2025-07-09T20:28:15.933346",
+      "end_time": "2025-07-09T20:28:15.934170",
+      "duration_seconds": 0.000824,
+      "conversation_id": null,
+      "validation_score": 0.0,
+      "errors": [
+        "Conversation simulation failed: ConversationRecord.__init__() got an unexpected keyword argument 'conversation_id'"
+      ],
+      "warnings": [],
+      "metrics": {},
+      "retry_count": 0,
+      "logs_captured": false,
+      "flow_validation": null
+    },
+    {
+      "test_id": "indecisive_journey_indecisive_5fe5169f",
+      "scenario_id": "indecisive_journey",
+      "persona_name": "indecisive",
+      "status": "failed",
+      "start_time": "2025-07-09T20:28:15.933493",
+      "end_time": "2025-07-09T20:28:15.934203",
+      "duration_seconds": 0.00071,
+      "conversation_id": null,
+      "validation_score": 0.0,
+      "errors": [
+        "Conversation simulation failed: ConversationRecord.__init__() got an unexpected keyword argument 'conversation_id'"
+      ],
+      "warnings": [],
+      "metrics": {},
+      "retry_count": 0,
+      "logs_captured": false,
+      "flow_validation": null
+    },
+    {
+      "test_id": "immediate_rejection_disinterested_137557fd",
+      "scenario_id": "immediate_rejection",
+      "persona_name": "disinterested",
+      "status": "failed",
+      "start_time": "2025-07-09T20:28:15.933803",
+      "end_time": "2025-07-09T20:28:15.934252",
+      "duration_seconds": 0.000449,
+      "conversation_id": null,
+      "validation_score": 0.0,
+      "errors": [
+        "Conversation simulation failed: ConversationRecord.__init__() got an unexpected keyword argument 'conversation_id'"
+      ],
+      "warnings": [],
+      "metrics": {},
+      "retry_count": 0,
+      "logs_captured": false,
+      "flow_validation": null
+    },
+    {
+      "test_id": "full_journey_success_eager_21f90045",
+      "scenario_id": "full_journey_success",
+      "persona_name": "eager",
+      "status": "failed",
+      "start_time": "2025-07-09T20:28:15.933845",
+      "end_time": "2025-07-09T20:28:15.934264",
+      "duration_seconds": 0.000419,
+      "conversation_id": null,
+      "validation_score": 0.0,
+      "errors": [
+        "Conversation simulation failed: ConversationRecord.__init__() got an unexpected keyword argument 'conversation_id'"
+      ],
+      "warnings": [],
+      "metrics": {},
+      "retry_count": 0,
+      "logs_captured": false,
+      "flow_validation": null
+    },
+    {
+      "test_id": "skeptical_evaluation_skeptical_f8a7fdce",
+      "scenario_id": "skeptical_evaluation",
+      "persona_name": "skeptical",
+      "status": "failed",
+      "start_time": "2025-07-09T20:28:15.933930",
+      "end_time": "2025-07-09T20:28:15.934350",
+      "duration_seconds": 0.00042,
+      "conversation_id": null,
+      "validation_score": 0.0,
+      "errors": [
+        "Conversation simulation failed: ConversationRecord.__init__() got an unexpected keyword argument 'conversation_id'"
+      ],
+      "warnings": [],
+      "metrics": {},
+      "retry_count": 0,
+      "logs_captured": false,
+      "flow_validation": null
+    }
+  ]
+}
