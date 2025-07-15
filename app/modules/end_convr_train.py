@@ -222,6 +222,47 @@ def load_daily():
         logger.error(f"Error loading dataset: {e}")
         raise
 
+def load_custom_jsonl(file_path):
+    """Load custom JSONL dataset with conversation ending data"""
+    import json
+    
+    try:
+        logger.info(f"Loading custom JSONL dataset from {file_path}...")
+        data = []
+        
+        with open(file_path, 'r', encoding='utf-8') as f:
+            for line in f:
+                try:
+                    json_obj = json.loads(line.strip())
+                    if 'messages' in json_obj:
+                        # Extract user message and assistant response
+                        user_message = None
+                        assistant_response = None
+                        
+                        for msg in json_obj['messages']:
+                            if msg['role'] == 'user':
+                                user_message = msg['content']
+                            elif msg['role'] == 'assistant':
+                                assistant_response = msg['content']
+                        
+                        if user_message and assistant_response:
+                            # Convert assistant response to binary label
+                            label = 1 if assistant_response.strip() == '[END]' else 0
+                            data.append({
+                                'text': user_message,
+                                'label': label
+                            })
+                except json.JSONDecodeError as e:
+                    logger.warning(f"Skipping invalid JSON line: {e}")
+                    continue
+        
+        logger.info(f"Loaded {len(data)} examples from custom JSONL file")
+        return pd.DataFrame(data)
+    
+    except Exception as e:
+        logger.error(f"Error loading custom JSONL dataset: {e}")
+        raise
+
 def tokenize_function(examples, tokenizer):
     """Tokenize examples using the provided tokenizer while preserving labels"""
     # Tokenize the text
@@ -266,9 +307,13 @@ def main():
     device = setup_device_and_logging()
     
     # Load dataset
-    daily_dialog_dataset = load_daily()
+    # OLD: DailyDialog dataset (commented out)
+    # daily_dialog_dataset = load_daily()
     # processed_df = preprocess_conversations_v2(daily_dialog_dataset)
-    processed_df = preprocess_conversations_for_ending_cues(daily_dialog_dataset, end_window_size=1, non_end_window_size=3) # NEW
+    # processed_df = preprocess_conversations_for_ending_cues(daily_dialog_dataset, end_window_size=1, non_end_window_size=3) # NEW
+    
+    # NEW: Load custom JSONL dataset
+    processed_df = load_custom_jsonl("conversation_ending_data_shuffled.jsonl")
 
     
     logger.info("Dataset preprocessing complete")
