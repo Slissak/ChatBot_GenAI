@@ -6,6 +6,12 @@ from dotenv import load_dotenv
 import argparse
 import time
 
+"""
+This script manages the fine-tuning of an OpenAI model using a custom dataset.
+It handles uploading the training data, creating a fine-tuning job via the OpenAI API, and polling for its completion.
+The script is designed to be run from the command line to start and monitor the fine-tuning process.
+"""
+
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
