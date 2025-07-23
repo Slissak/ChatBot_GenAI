@@ -12,43 +12,45 @@ This application is a multi-agent system designed to assist candidates during th
 
 Additionally, the system includes a hidden Exit Agent that monitors the conversation to determine appropriate ending points, enhancing the natural flow of interactions without direct user awareness.
 
-## Setup and Installation
+## Setup and Run
 Follow these steps to set up and run the application:
 
-1. **Python Virtual Environment Setup:**
-   ```bash
-   # Create a new virtual environment
-   python -m venv .venv
-   
-   # Activate the virtual environment
-   # On Windows:
-   .venv\Scripts\activate
-   # On macOS/Linux:
-   source .venv/bin/activate
-   
-   # Install dependencies
-   pip install -r requirements.txt
-   ```
+1.  **Set up the Python Environment:**
+    ```bash
+    # Create and activate a virtual environment
+    python -m venv .venv
+    source .venv/bin/activate  # On macOS/Linux
+    # .venv\Scripts\activate  # On Windows
+    
+    # Install dependencies
+    pip install -r requirements.txt
+    ```
 
-2. **Database Setup:**
-   - Install Microsoft SQL Server locally or have access to a MSSQL instance
-   - Create a new database for the application
-   - Execute the `app/db_Tech.sql` script to create and populate the interview slots table
+2.  **Configure Environment Variables:**
+    Create a file named `.env` in the project root. Copy the example below and replace the placeholder values with your actual credentials.
+    ```env
+    # OpenAI API Configuration
+    OPENAI_API_KEY="your_openai_api_key"
 
-3. **Environment Configuration:**
-   Create a `.env` file in the project root with the following variables:
-   ```
-   # OpenAI API Configuration
-   OPENAI_API_KEY=your_openai_api_key
+    # Database Configuration
+    DB_SERVER="your_server_name"
+    DB_NAME="your_database_name"
+    DB_USER="your_username"
+    DB_PASSWORD="your_password"
+    DB_PORT="1433" # Default SQL Server port
+    DB_DRIVER="ODBC Driver 17 for SQL Server"
+    ```
 
-   # Database Configuration
-   DB_SERVER=your_server_name
-   DB_NAME=your_database_name
-   DB_USER=your_username
-   DB_PASSWORD=your_password
-   DB_PORT=your_port
-   DB_DRIVER=ODBC Driver 17 for SQL Server
-   ```
+3.  **Set up the Database:**
+    - Make sure you have Microsoft SQL Server running and accessible.
+    - Create a new database for the application.
+    - Run the `app/db_Tech.sql` script in your SQL Server instance to create the `InterviewSlots` table and populate it with initial data.
+
+4.  **Run the Application:**
+    Use the Streamlit interface to interact with the bot:
+    ```bash
+    streamlit run streamlit/streamlit_app.py
+    ```
 
 ## Project Structure
 Below is a detailed explanation of the key files and directories in the project:
@@ -82,19 +84,6 @@ Below is a detailed explanation of the key files and directories in the project:
 ├── README.md                   # Project documentation
 └── requirements.txt            # Python package dependencies
 ```
-
-## How to run the app locally
-There are two ways to run the chat bot locally:
-
-1. **Using Streamlit Interface (Recommended):**
-   ```bash
-   streamlit run /Users/sivanlissak/Documents/GenAI/streamlit/streamlit_app.py
-   ```
-
-2. **Using Console Mode:**
-   ```bash
-   python app/main.py
-   ```
 
 ## Bot Architecture
 The bot's architecture diagram illustrates the structural design of our multi-agent system. This architecture serves as a blueprint for how different agents interact within the system, showing the hierarchical relationship between the supervisor agent and its sub-agents.

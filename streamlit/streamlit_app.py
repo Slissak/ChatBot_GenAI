@@ -8,6 +8,10 @@ import os
 import sys
 import time
 import logging
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Add both project root and app directory to Python path
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
@@ -84,7 +88,7 @@ st.sidebar.markdown("*Built with ❤️ using Streamlit | Powered by AI*")
 st.sidebar.markdown("*Contributors: Sivan Lissak, Itay Gefner, Bonnie Erez*")
 
 if page == "main":
-    st.header("🏠 Main Chat Area")
+    # st.header("🏠 Main Chat Area")
     
     # Display chat messages
     for message in st.session_state.messages:
